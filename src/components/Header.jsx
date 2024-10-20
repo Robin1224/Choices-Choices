@@ -1,9 +1,9 @@
-import "./Header.css";
+import styles from "./Header.module.css";
 
-const Header = () => {
+const Header = (page) => {
   return (
     <header>
-      <a href="/" class="logo">
+      <a href="/" className={styles.logo}>
         <img
           src="/visual-thinking-hbo-logo.svg"
           alt="Visual Thinking Logo"
@@ -37,7 +37,7 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="/artikelen">
+            <a href="/artikelen" className={styles.active}>
               Artikelen
             </a>
           </li>

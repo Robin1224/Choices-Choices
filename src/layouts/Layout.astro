@@ -1,5 +1,6 @@
 ---
-const { title } = Astro.props;
+import Header from "../components/Header";
+const { page } = Astro.props;
 ---
 
 <!doctype html>
@@ -11,12 +12,13 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <!-- Rigid Square font -->
     <link rel="stylesheet" href="https://use.typekit.net/brx3lyu.css">
-     <!-- Yrsa font -->
+    <!-- Yrsa font -->
     <link rel="stylesheet" href="https://use.typekit.net/kdb0mcl.css">
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <title>Visual Thinking | {page}</title>
   </head>
   <body>
+    <Header page={page} />
     <slot />
   </body>
 </html>
