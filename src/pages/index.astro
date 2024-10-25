@@ -1,34 +1,63 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Breadcrumbs from '../components/Breadcrumbs.jsx';
+import Layout from "../layouts/Layout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.jsx";
+import Introduction from "../components/Introduction.jsx";
+import Articles from "../components/Articles.jsx";
+
+const query = {
+  method: "POST",
+  headers: { "Content-Type": "application/json", "Authorization": `Bearer ${import.meta.env.HYGRAPH_AUTH}`},
+  body: JSON.stringify({
+    query: `
+      {
+      page(where: {id: "clv8dqjvwum6i07w4u8fwvnsu"}) {
+        title
+        content {
+          html
+        }
+      }
+      
+      articles(first:6) {
+        visual {
+          url
+        }
+        title
+        intro
+        slug
+      }
+    }`,
+  }),
+};
+
+const response = await fetch(import.meta.env.HYGRAPH_ENDPOINT, query);
+const json = await response.json();
+const data = json.data;
 ---
 
 <Layout page="Artikelen">
   <Breadcrumbs title="Artikelen" bgc="var(--vtDarkBlue)" url={null} />
-	<main>
-    <h1>Test</h1>
-    <p>aaa bbb ccc</p>
-  </main>
+  <Introduction title={data.page.title} content={data.page.content} />
+  <Articles articles={data.articles} />
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
     color: white;
-	}
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+    color: white;
+  }
   p {
     color: white;
   }

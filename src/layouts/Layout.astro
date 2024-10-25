@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 const { page } = Astro.props;
 ---
 
@@ -20,6 +21,7 @@ const { page } = Astro.props;
   <body>
     <Header page={page} />
     <slot />
+    <Footer />
   </body>
 </html>
 <style is:global>

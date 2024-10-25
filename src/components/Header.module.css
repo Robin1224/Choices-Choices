@@ -1,6 +1,4 @@
-
-
-a {
+header a {
   --background: var(--vtYellow);
   color: var(--vtDarkBlue);
   text-decoration: none;
@@ -9,7 +7,7 @@ a {
   padding: 0.25rem;
 }
 
-a.logo {
+header a.logo {
   --background: var(--vtDarkBlue);
   padding: 1rem 0.25rem 0;
   margin-top: -0.75rem;
@@ -20,26 +18,26 @@ a.logo {
   transition: 0.25s;
 }
 
-a.logo:hover,
-a.logo:focus-visible {
+header a.logo:hover,
+header a.logo:focus-visible {
   background: none;
   outline: none;
   scale: 1.1;
 }
 
-a.logo img {
+header a.logo img {
   width: 60px;
 }
 
-nav {
+header nav {
   --horizontal-spacing: 1rem;
   padding: 1rem 1rem 1rem 3.5rem;
   position: relative;
   overflow: hidden;
 }
 
-nav::before,
-nav::after {
+header nav::before,
+header nav::after {
   content: "";
   position: absolute;
   top: 0;
@@ -55,7 +53,7 @@ nav::after {
   );
 }
 
-nav::after {
+header nav::after {
   left: auto;
   right: -1rem;
   background: linear-gradient(
@@ -65,7 +63,7 @@ nav::after {
   );
 }
 
-ul {
+header ul {
   list-style-type: none;
   display: flex;
   color: transparent;
@@ -79,9 +77,9 @@ ul {
   width: 100%;
 }
 
-ul li a:hover,
-ul li a:focus-visible,
-ul li a.active {
+header ul li a:hover,
+header ul li a:focus-visible,
+header ul li a.active {
   --state-color: var(--vtSec-DarkBlue);
   text-decoration: underline;
   text-decoration-color: var(--state-color);
@@ -89,74 +87,74 @@ ul li a.active {
   outline: none;
 }
 
-li:nth-child(1) a:hover,
-ul li:nth-child(1) a:focus-visible,
-ul li:nth-child(1) a.active {
+header li:nth-child(1) a:hover,
+header ul li:nth-child(1) a:focus-visible,
+header ul li:nth-child(1) a.active {
   --state-color: var(--vtYellow);
 }
 
-li:nth-child(2) a:hover,
-ul li:nth-child(2) a:focus-visible,
-ul li:nth-child(2) a.active {
+header li:nth-child(2) a:hover,
+header ul li:nth-child(2) a:focus-visible,
+header ul li:nth-child(2) a.active {
   --state-color: var(--vtSec-DarkBlue);
 }
 
-li:nth-child(3) a:hover,
-ul li:nth-child(3) a:focus-visible,
-ul li:nth-child(3) a.active {
+header li:nth-child(3) a:hover,
+header ul li:nth-child(3) a:focus-visible,
+header ul li:nth-child(3) a.active {
   --state-color: var(--vtRed);
 }
 
-li:nth-child(4) a:hover,
-ul li:nth-child(4) a:focus-visible,
-ul li:nth-child(4) a.active {
+header li:nth-child(4) a:hover,
+header ul li:nth-child(4) a:focus-visible,
+header ul li:nth-child(4) a.active {
   --state-color: var(--vtSec-LightBlue);
 }
 
-li:nth-child(5) a:hover,
-ul li:nth-child(5) a:focus-visible,
-ul li:nth-child(5) a.active {
+header li:nth-child(5) a:hover,
+header ul li:nth-child(5) a:focus-visible,
+header ul li:nth-child(5) a.active {
   --state-color: var(--vtDarkBlue);
 }
 
-li:nth-child(6) a:hover,
-ul li:nth-child(6) a:focus-visible,
-ul li:nth-child(6) a.active {
+header li:nth-child(6) a:hover,
+header ul li:nth-child(6) a:focus-visible,
+header ul li:nth-child(6) a.active {
   --state-color: var(--vtGrey);
 }
 
 @media (min-width: 80em) {
-  a.logo {
+  header a.logo {
     position: absolute;
     z-index: 1;
     left: calc(50% - 40px);
     top: 0.5rem;
   }
 
-  a.logo img {
+  header a.logo img {
     width: 80px;
   }
 
-  nav {
+  header nav {
     --horizontal-spacing: 10vw;
     padding-left: 1rem;
   }
 
-  nav::before,
-  nav::after {
+  header nav::before,
+  header nav::after {
     display: none;
   }
 
-  ul {
+  header ul {
     --spacing-logo: 6rem;
     justify-content: center;
   }
 
-  li:nth-of-type(3) {
+  header li:nth-of-type(3) {
     margin-right: var(--spacing-logo);
   }
 
-  li:nth-of-type(4) {
+  header li:nth-of-type(4) {
     margin-left: var(--spacing-logo);
   }
 }
