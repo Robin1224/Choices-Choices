@@ -1,3 +1,5 @@
+<a id="readme-top"></a>
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -22,15 +24,17 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Page screenshot](https://github.com/user-attachments/assets/75bfc47a-12f5-4178-90de-748048931033)
+![Page screenshot](https://github.com/user-attachments/assets/4970ac88-51d9-420c-bdcb-dcc684e7b336)
 
-A portfolio website made in around 3 weeks as an assignment for my University course. Eventually - once I have more time to work on it - this will include my created work, and a sort of digital garden-type collection of notes and writings. For now only includes some window manipulation functionality and basic information about myself. You can move windows, minimise, and close them.
+A uni assignment focused on embracing a new tech-stack. Recreation of the articles page from the Visual Thinking project, but now using Astro and React rather than SvelteKit.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-* [![Svelte](https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00)](https://svelte.dev/)
+* Astro
+* ReactJS
+* Hygraph CMS
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -40,20 +44,22 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-1. Clone the repo
+1. Create an account on Hygraph, and get your endpoint URL & permanent auth token
+2. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/Robin1224/choices-choices-the-tech-stack.git
    ```
-2. Install NPM packages
+3. Create your `.env` file using `example.env` as a guide
+4. Install NPM packages
    ```sh
    npm install
    ```
-3. Change git remote url to avoid accidental pushes to base project
+5. Change git remote url to avoid accidental pushes to base project
    ```sh
    git remote set-url origin github_username/repo_name
    git remote -v # confirm the changes
    ```
-4. Run the SvelteKit local development server
+6. Run the SvelteKit local development server
    ```sh
    npm run dev
    ```
