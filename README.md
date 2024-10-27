@@ -17,7 +17,7 @@
     <br />
     <a href="https://github.com/Robin1224/Win95-Portfolio/issues/new">Report Bug</a>
     ·
-    <a href="">Run locally</a>
+    <a href="https://github.com/Robin1224/Choices-Choices?tab=readme-ov-file#getting-started">Run locally</a>
   </p>
 </div>
 
@@ -47,7 +47,7 @@ To get a local copy up and running follow these simple example steps.
 1. Create an account on Hygraph, and get your endpoint URL & permanent auth token
 2. Clone the repo
    ```sh
-   git clone https://github.com/Robin1224/choices-choices-the-tech-stack.git
+   git clone https://github.com/Robin1224/Choices-Choices.git
    ```
 3. Create your `.env` file using `example.env` as a guide
 4. Install NPM packages
