@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Robin1224/choices-choices-the-tech-stack">
-    <img src="https://seeklogo.com/images/A/astro-icon-logo-44253BACEE-seeklogo.com.png" alt="Logo" width="80" height="80">
+    <img src="https://seeklogo.com/images/A/astro-icon-logo-44253BACEE-seeklogo.com.png" alt="Logo" width="80" height="100">
   </a>
 
 <h3 align="center">Choices Choices</h3>
@@ -10,10 +10,9 @@
   <p align="center">
     An assignment on tech-stacks
     <br />
-    <a href="fdnd-profile-card.vercel.app"><strong>Live link »</strong></a>
+    <a href="https://choiceschoices.netlify.app/"><strong>Live link »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/users/Robin1224/projects/7">Project Board</a>
     ·
     <a href="https://github.com/Robin1224/Win95-Portfolio/issues/new">Report Bug</a>
     ·
