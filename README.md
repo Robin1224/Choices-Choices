@@ -32,9 +32,9 @@ A uni assignment focused on embracing a new tech-stack. Recreation of the articl
 
 ### Built With
 
-* Astro
-* ReactJS
-* Hygraph CMS
+[![Astro](https://img.shields.io/badge/Astro-FF3E00?style=for-the-badge&logo=astro&logoColor=ffffff)](https://astro.build/) <br />
+[![React JS](https://img.shields.io/badge/React-292929?style=for-the-badge&logo=react&logoColor=2CDAFF)](https://react.dev/) <br />
+[![Hygraph CMS](https://img.shields.io/badge/Hygraph_CMS-101B42?style=for-the-badge&logo=graphql&logoColor=ffffff)](https://hygraph.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
