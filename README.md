@@ -76,7 +76,6 @@ Distributed under the MIT License. See the `LICENSE` file for more information.
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [Windows 95 icon archive by Alex Meub](https://win98icons.alexmeub.com/)
-* [SvelteKit documentation](https://svelte.dev/docs/kit/introduction)
+* [Astro documentation](https://docs.astro.build/en/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
